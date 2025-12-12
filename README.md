@@ -47,7 +47,7 @@ python src/app.py --image ./data/sample/synthetic.jpg --known_width_mm 85.6 --re
 
 - Chanho Lee: core measurement logic, repository setup, integration
 - Chanbin Park: README documentation, demo images
-- Hwirang Yeo: testing, parameter tuning, contour filtering
+- Hwirang Yeo: testing, parameter tuning, contour filtering,leader
 
 
 ## Project Structure
