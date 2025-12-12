@@ -2,8 +2,20 @@
 Measure object size in millimeters using a known-width reference object. 
 (참조 물체의 실제 폭을 알고 있을 때, 이미지 속 다른 물체의 가로·세로 길이를 mm 단위로 계산합니다.)
 
+This project demonstrates how computer vision can estimate real-world object dimensions
+from a single image using a reference object, which is useful for inspection, education,
+and simple measurement applications.
+(이 프로젝트는 기준 물체(reference object)를 활용하여 단일 이미지로부터 실제 세계의 물체 크기를 추정하는 컴퓨터 비전 기법을 보여주며, 검사(inspection), 교육, 간단한 측정 도구 등의 용도로 활용될 수 있다.)
+
 ## Demo
 Demo images will be saved under `docs/images/` after running the command below.
+
+### Input
+![input](data/sample/card_objects.png)
+
+### Output
+![output](docs/images/result_card.png)
+
 
 ## Features
 - Auto-detect reference contour and compute pixel-per-mm scale
@@ -31,6 +43,13 @@ python src/app.py --image ./data/sample/synthetic.jpg --known_width_mm 85.6 --re
 - `--min_area`: minimum contour area to consider (default 500)
 - `--debug`: save intermediate images (edges, contours) to `docs/images/debug_*.jpg`
 
+## Team Members
+
+- Chanho Lee: core measurement logic, repository setup, integration
+- Member B: README documentation, demo images
+- Member C: testing, parameter tuning, contour filtering
+
+
 ## Project Structure
 ```
 /src
@@ -47,3 +66,5 @@ LICENSE (optional)
 
 ## References
 - OpenCV documentation: Contours, Canny edge, minAreaRect
+- https://github.com/Practical-CV/Measuring-Size-of-Objects-with-OpenCV
+- OpenCV Documentation: https://docs.opencv.org/
